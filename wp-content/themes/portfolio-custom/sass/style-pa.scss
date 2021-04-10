@@ -1,0 +1,372 @@
+
+@import "function-pa";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: white;
+
+    
+}
+
+h1 {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+    padding: 20px !important;
+}
+.entry-header {
+    h1 {
+    text-decoration: underline white;
+    }
+}
+
+h3 {
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Montserrat';
+    font-weight: 400 !important;
+}
+a {
+    font-family: 'Palanquin';
+    font-weight: 700 !important;
+}
+
+//header
+
+ #wpadminbar {
+     display: none !important;
+ } 
+
+.navbar-pa {
+    background-color: white;
+    box-shadow: 0 2px 4px $blackTransparent;
+    text-align: center;
+
+    .nav-link {
+        font-size: 16px;
+        color: $grey-nav;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        margin: 0 2rem;
+    }
+}
+
+
+.header-logo {
+    padding-top: 100px;
+    height: auto;
+    padding-bottom: 100px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(70deg, $blackTransparent, rgb(255, 255, 255), $blackTransparent);
+    
+    img {
+        width: 400px !important;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 770px) {
+    .header-logo {
+        background-color: wheat;
+    }
+}
+//footer
+
+footer {
+    background-color: black;
+    text-align: center;
+    a, a:visited, p {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+//home
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+.card-article {
+    align-items: baseline;
+    &-img {
+        img {
+            margin: 10% 4% 0 4%;
+            width: 92%;
+            max-width: 700px;
+            max-height: 550px ;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 6px 12px 8px $blackTransparent;
+           
+        }
+    }
+
+    &-content {
+        height: 300px;
+        .lire-plus {
+            a {
+                margin:20px;
+                background-color: rgba(255, 255, 255, 0);
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 7px;
+                border: solid 3px;
+                box-shadow: 4px 8px 4px $blackTransparent;
+            }
+    }
+       .categorie {
+           margin: 0 20px 30px 20px;
+           h4 {
+               display: none;
+           }
+            a {
+                font-size: 13px;
+                text-decoration: none;
+                background-color: rgb(29, 29, 29);
+                color: white !important;
+                
+                border-color: red !important;
+                    border-radius: 7px;
+                    border: solid 3px;
+                    padding: 7px 14px;
+                    box-shadow: 2px 4px 4px $blackTransparent;
+                }
+       }
+       
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .card-article {
+    
+        .card-article-content  {
+            text-align: center !important;
+        }
+    }
+}
+
+
+.card-article:nth-child(2n) {
+    flex-direction: row-reverse;
+   
+   
+}
+.card-article:nth-child(2n+1) {
+    
+    .card-article-content  {
+        text-align: right;
+    }
+}
+
+
+
+.card-article:nth-child(4n+1) {
+    background-color: $black;
+    .color-degrade {
+        background: linear-gradient( $black, $redDark);
+    }
+    h1, p, a {
+        color: $white;
+    }
+    a {
+        border-color: $white;
+    }
+}
+.card-article:nth-child(4n+2) {
+    background-color: $redDark;
+    .color-degrade {
+        background: linear-gradient( $redDark, $redLight);
+    }
+    h1, p, a {
+        color: $white;
+    }
+    a {
+        border-color: $white;
+    }
+}
+.card-article:nth-child(4n+3) {
+    background-color: $redLight;
+    .color-degrade {
+        background: linear-gradient( $redLight, $white);
+    }
+    h1, p, a {
+        color: $black;
+    }
+    a {
+        border-color: $black;
+    }
+}
+.card-article:nth-child(4n) {
+    background-color: $white;
+    .color-degrade {
+        background: linear-gradient($white, $black);
+    }
+    h1, p, a {
+        color: $black;
+    }
+    a {
+        border-color: $black;
+    }
+}
+
+.card-article:last-child {
+    .color-degrade {
+        background : none;
+    }
+}
+
+.color-degrade {
+    height: 200px;
+}
+
+// single
+
+.entry-header, .entry-content {
+    text-align: center;
+}
+
+.img_mise_en_avant {
+    text-align: center;
+    img {
+    width: 80%;
+    border-radius: 20px;
+    }
+}
+
+.entry-content {
+    .wp-block-columns {
+        align-items: center;
+        .wp-block-buttons {
+            .wp-block-button {
+                background-color: black;
+            }
+        }
+    }
+
+
+    .wp-block-button {
+        background-color: rgb(197, 15, 15);
+        width: 90%;
+        border-radius: 20px !important;
+        box-shadow: 5px 10px 5px $blackTransparent;
+        padding: 5px;
+        margin: 10px 0 ;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            background-color: transparent;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    p {
+        margin: 20px 5%;
+        font-family: 'Martel';
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+.nav-links {
+    margin-top: 50px;
+    .nav-previous {
+        a {
+            border-radius: 0 10px 0 0;
+            padding: 1% 3% 1% 4% ;
+        }
+    }
+    .nav-next {
+        a {
+            border-radius: 10px 0 0 0;
+            padding: 1% 4% 1% 3% ;
+        }
+    }
+
+    a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+}
+
+
+
+// archive  
+
+
+.entry-header {
+    .entry-title {
+        a {
+            color: blanchedalmond;
+            
+        }
+    }
+}
+
+.separateur {
+    width: 100%;
+    background-color: rgb(230, 90, 90);
+    height: 5px;
+}
+
+
+// accueil
+
+#accueil {
+    text-align: center;
+    padding-bottom: 50px;
+    img {
+        border-radius: 10%;
+        width: 90%;
+    }
+    .menu_accueil {
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+    }
+
+    ol, ul {
+        padding: 0 !important;
+        margin: auto !important;
+    }
+
+    h2, h5 {
+        color: wheat;
+    }
+    a {
+        
+        margin:20px;
+        color: yellowgreen;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 15px 30px !important;
+        border-radius: 7px;
+        border: solid 3px;
+        box-shadow: 4px 8px 4px $blackTransparent;
+        font-family: 'Palanquin';
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
+
+.wpcf7-response-output {
+    color: white;
+}
