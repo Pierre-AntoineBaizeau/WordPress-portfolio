@@ -1,4 +1,7 @@
 ﻿# wordpress-Pierre-AntoineBaizeau
+ 
+ lien pour se rendre sur le portfolio : http://portfolio.pierre-antoine-baizeau.tk/
+ 
 Bonjour, bienvenue sur mon repository de mon theme personnel qui m'a servi a créer mon portfolio. 
 Si vous avez des question n'hesitez pas a m'envoyer un message :)
 
